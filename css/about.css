@@ -1,0 +1,348 @@
+.landing {
+    background: url(../images/banner4.jpg) no-repeat center/cover;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.638);
+    z-index: 10;
+}
+
+.landing h2 {
+    margin: auto;
+    z-index: 12;
+    color: #fff;
+}
+
+/* end landing */
+
+/* start about  */
+.about {
+    position: relative;
+    padding: 130px 0 50px;
+    background-color: var(--main-color);
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .container .box {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .container .box span {
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.about .container .box h2 {
+    color: var(--gray-color);
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.about .container .box p {
+    color: var(--gray-color);
+    font-size: 18px;
+}
+
+.about .container .box button {
+    all: unset;
+    font-size: 18px;
+    background-color: var(--blue-color);
+    color: var(--main-color);
+    width: 150px;
+    border-radius: 15px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 5px;
+    border: 1px solid var(--blue-color);
+    transition: 300ms;
+}
+
+.about .container .box button:hover {
+    box-shadow: rgba(56, 135, 196, 0.76) 0px 1px 2px 0px, rgba(23, 157, 224, 0.702) 0px 2px 6px 2px;
+}
+
+.about .container .box .get {
+    color: var(--blue-color);
+    background-color: transparent;
+}
+
+.about .container .box .get:hover {
+    color: var(--main-color);
+    background-color: var(--blue-color);
+}
+
+.about .container .box img {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.about .container .box-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    z-index: 11;
+}
+
+@media only screen and (max-width: 600px) {
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about .container {
+        flex-direction: row;
+    }
+
+    .about .container .box {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about .container {
+        flex-direction: row;
+    }
+
+    .about .container .box {
+        width: 50%;
+    }
+}
+
+/* end about  */
+
+/* start information ££££££££££££ */
+.information{
+    padding: 70px 0;
+    text-align: center;
+}
+.information span{
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--gray-color);
+}
+.information h4{
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 70px;
+    color: var(--gray-color);
+}
+.information .container{
+    text-align: left;
+}
+.information .container ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.information .container ul li{
+    width: 24%;
+    
+}
+.information .container ul li button{
+    all: unset;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--gray-color);
+}
+.information .container ul li button:is(.active){
+    background-color: var(--blue-color);
+    color: var(--main-color);
+}
+.information .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.information .container .content .box{
+    width: 50%;
+    padding: 20px;
+}
+.information .container .content .box h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--gray-color);
+}
+.information .container .content .box p{
+    margin: 20px 0;
+    color: var(--gray-color);
+}
+.information .container .content .box ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
+}
+.information .container .content .box ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-weight: bold;
+    color: var(--gray-color);
+}
+.information .container .content .box ul li i{
+    color: #f80;
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.information .container .content .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .information .container .content{
+        flex-direction: column;
+    }
+    .information .container .content .box{
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0;
+    }
+    .information .container ul li button{
+        width: 85px;
+        padding: 5px 0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .information .container .content{
+        flex-direction: column;
+    }
+    .information .container .content .box{
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0;
+    }
+    .information .container ul li button{
+        width: 100px;
+        padding: 10px 5px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .information .container .content{
+        flex-direction: column;
+    }
+    .information .container .content .box{
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0;
+    }
+    .information .container ul li button{
+        width: 150px;
+        padding: 5px 0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .information .container .content{
+        flex-direction: row;
+    }
+    .information .container .content .box{
+        width: 50%;
+        padding: 20px;
+        margin:  0;
+    }
+    .information .container ul li button{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .information .container .content{
+        flex-direction: row;
+    }
+    .information .container .content .box{
+        width: 50%;
+        padding: 20px;
+        margin:  0;
+    }
+    .information .container ul li button{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+/* end information £££££££££££££ */
+/* start cards */
+.cards{
+    text-align: center;
+}
+.cards .box{
+   cursor: pointer;
+}
